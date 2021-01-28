@@ -1,12 +1,12 @@
 fn main() {
     let _guess = "42".parse::<u32>().expect("Not a number!");
-    
+
     let x = 5;
 
     let x = x + 1;
 
     let x = x * 2;
-    
+
     println!("The value of x is: {}", x);
 
     let tup = (500, 6.4, 1);
@@ -36,6 +36,6 @@ fn main() {
     println!("The value of seven_sevens[3] is: {}", seven_sevens[3]);
 
     let foo = 3 + 4;
-    
+
     println!("Danger, Will Robinson, danger! {}", seven_sevens[foo]); // compile error, not runtime error
 }
