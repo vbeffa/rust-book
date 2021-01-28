@@ -21,16 +21,13 @@ fn main() {
         };
 
         if n == 0 || n > 93 {
-	    println!("N must be between 1 and 93.");
+            println!("N must be between 1 and 93.");
             continue;
         }
 
         for i in 3..n + 1 {
             if !fibs.contains_key(&i) {
-                fibs.insert(
-                    i,
-                    fibs.get(&(i - 1)).unwrap() + fibs.get(&(i - 2)).unwrap(),
-                );
+                fibs.insert(i, fibs.get(&(i - 1)).unwrap() + fibs.get(&(i - 2)).unwrap());
             }
         }
 
